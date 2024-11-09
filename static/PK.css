@@ -1,0 +1,311 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.container {
+    display: flex;
+    justify-content: flex-start; /* Adjust to start */
+    align-items: flex-start; 
+    padding: 20px;
+    max-width: 1300px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Doctor Info Section */
+.doctor-info {
+    flex: 1; /* Allow this section to take available space */
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%; 
+}
+
+
+.doctor-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.qualifications, .specialization, .experience {
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.verification {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: green;
+}
+
+.description {
+    margin-top: 15px;
+}
+
+.doctor_img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 100%; 
+    margin-bottom: 50px;
+}
+
+/* Ratings Section */
+.ratings {
+    margin-top: 20px;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: 10px 0;
+}
+
+.rating-item p {
+    margin: 0; 
+    font-weight: bold;
+}
+
+/* Ovals for Ratings */
+.oval-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; 
+}
+
+.oval {
+    width: 43px; 
+    height: 20px; 
+    border-radius: 5px; 
+    background-color: rgba(0, 128, 0, 0.3); 
+    margin-right: 10px; 
+    position: relative;
+    transition: background-color 0.5s; 
+}
+
+.oval.filled {
+    background-color: green; 
+    animation: fill-ovals 1s forwards; 
+}
+
+/* Animation for filling the ovals */
+@keyframes fill-ovals {
+    from {
+        background-color: rgba(128, 47, 0, 0.3); 
+    }
+    to {
+        background-color: green; 
+    }
+}
+
+/* Info and Reviews Section */
+.info-reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.info, .reviews {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.info h2, .reviews h2 {
+    margin-top: 0;
+}
+
+.reviews {
+    margin-top: 10px; 
+}
+
+.review {
+    border-top: 1px solid #ddd; 
+    padding: 10px 0; 
+}
+
+.review:first-child {
+    border-top: none; 
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-title {
+    font-weight: bold;
+    color: #555;
+    margin: 5px 0;
+}
+
+.recommend {
+    color: green;
+    margin: 5px 0;
+}
+
+.happy-with {
+    margin: 5px 0;
+}
+
+.happy-with span {
+    background-color: #e0f7fa; 
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.review-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Appointment Section */
+.appointment-section {
+    flex: 0 0 350px; /* Fixed width for the appointment section */
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    margin-left: 20px; /* Space between doctor info and appointment */
+    margin-top: 20px;
+    align-self: flex-start; 
+}
+
+/* Header styles for appointment section */
+.appointment-section h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.rating2, .fees {
+    margin: 30px 0;
+}
+
+.location {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Slots Section */
+.slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between slots */
+}
+
+.slot {
+    background-color: #f8f8f8;
+    border: 1px solid #00acc1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.slot:hover {
+    background-color: #00acc1; /* Highlight on hover */
+    color: white; /* Text color on hover */
+}
+
+.slot.active-slot {
+    background-color: #00acc1;
+    color: white;
+    border: 1px solid #005bb5; 
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #0082ef;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 80px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 4px;
+}
+
+nav ul li a.sign-in {
+    border: 2px solid rgb(36, 210, 237);
+    border-radius: 20px;
+    padding: 8px 25px;
+    margin-left: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}/* Date Selection Styles */
+.date-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Space below the date selection */
+}
+
+.date-btn {
+    background-color: transparent;
+    border: 1px solid #00acc1;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1; /* Make buttons equal width */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date-btn:hover {
+    background-color: #00acc1; /* Highlight on hover */
+    color: white; /* Text color on hover */
+}
+
+.date-btn.active {
+    background-color: #00acc1; /* Highlight active button */
+    color: white;
+}
+
+.date-btn.inactive {
+    color: gray; /* Color for inactive slots */
+}
+
+.date-btn span {
+    font-size: 12px; /* Smaller font for slots available text */
+    display: block; /* Stack text */
+}
