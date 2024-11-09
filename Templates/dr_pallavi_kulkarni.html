@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Medicine Profile</title>
+    <link rel="stylesheet" href="PK.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">ResQ</label> 
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Video Consultation</a></li>
+            <li><a href="#">SignIn/LogIn</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="doctor-info">
+            <div class="doctor_img">
+                <img src="data:image/jpeg;base64,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">
+            </div> 
+            <h1>Dr. Pallavi Kulkarni</h1>
+            <p class="qualifications">MBBS, MD - Internal Medicine</p>
+            <p class="specialization">Internal Medicine</p>
+            <p class="experience">9 Years Experience Overall</p>
+            <div class="verification">
+                <span class="verified">✅ Medical Registration Verified</span>
+                <span class="rating">👍🏻 4.9 (45 patients)</span>
+            </div>
+            <p class="description">Dr. Pallavi Kulkarni is a trusted General Physician at Narayana Health, Bengaluru.</p>
+            <!-- Rest of the profile structure remains the same -->
+            <div class="ratings">
+                <div class="rating-item professionalism">
+                    <p>Professionalism</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>9/10</p>
+                </div>
+                <div class="rating-item diagnosis">
+                    <p>Diagnosis</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>8/10</p>
+                </div>
+                <div class="rating-item availability">
+                    <p>Availability</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>6/10</p>
+                </div>
+                <div class="rating-item facility">
+                    <p>Facility</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                    </div>
+                    <p>10/10</p>
+                </div>
+            </div>
+
+            <!-- Info and Reviews Section -->
+            <div class="info-reviews">
+                <div class="info">
+                    <h2>Info</h2>
+                    <p><strong>Specialization:</strong> General Physician</p>
+                    <p><strong>Hospital:</strong> Narayana Health, Bengaluru</p>
+                    <p><strong>Experience:</strong> 9 Years</p>
+                </div>
+                
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <div class="review">
+                        <p class="reviewer-name">Seema Nayak (Verified)</p>
+                        <p class="review-title">Visited for General Physicina Check-Up</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Treatment satisfaction</span></p>
+                        <p class="review-text"><em>Dr. Kulkarni provided excellent care for my migraines. Her approach was calm, and his diagnosis was spot on.</em></p>
+                    </div>
+                    <div class="review">
+                        <p class="reviewer-name">Rahul Hegde (Verified)</p>
+                        <p class="review-title">Visited for Routine Check-Up</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Service Quality</span></p>
+                        <p class="review-text"><em>Dr. Kulkarni took his time explaining my health condition. She’s very knowledgeable and thorough.</em></p>
+                    </div>
+                    <div class="review">
+                        <p class="reviewer-name">Aisha Khan (Verified)</p>
+                        <p class="review-title">Follow-Up Appointment</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Doctor's Attentiveness</span></p>
+                        <p class="review-text"><em>Dr. Kulkarni helped me manage my epilepsy effectively. She was attentive and made sure I was comfortable throughout.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div class="appointment-section">
+            <h2>Narayana Health 🏥</h2>
+            <p class="location">Opp.IIM 154/11, Bannerghatta Road, Bangalore, Karnataka – 560076</p>
+            <p class="rating2">⭐⭐⭐⭐⭐ 4.8</p>
+            <p class="fees">Consultation Fee - ₹750</p>
+
+            <!-- Date Selection Section -->
+            <div class="date-selection">
+                <select id="dateSelector" onchange="updateSlots()">
+                    <option value="today">Today (No Slots Available)</option>
+                    <option value="tomorrow">Tomorrow (9 Slots Available)</option>
+                    <option value="saturday">Sat, 19 Oct (10 Slots Available)</option>
+                </select>
+            </div>
+
+            <div class="slots" id="slotsContainer">
+                <button class="slot">10:00 AM</button>
+                <button class="slot">10:30 AM</button>
+                <button class="slot">11:00 AM</button>
+                <button class="slot">11:30 AM</button>
+                <button class="slot">12:00 PM</button>
+                <button class="slot">4:30 PM</button>
+                <button class="slot">5:30 PM</button>
+                <button class="slot">7:30 PM</button>
+                <button class="slot">8:30 PM</button>
+                <button class="slot">9:00 PM</button>
+            </div>
+            
+            <div class="button-container">
+                <button class="book-btn" id="bookButton">
+                    <span class="button-text">Book</span>
+                    <span class="order-text" style="display:none;">Confirmed ✔</span>
+                    <div class="truck-container">
+                        <div class="truck" id="truck"></div>
+                        <div class="road-markings" id="roadMarkings"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

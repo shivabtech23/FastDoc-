@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychiatrist Profile</title>
+    <link rel="stylesheet" href="static//anjali.css">
+    <link rel="stylesheet" href="static//styles.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">ResQ</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Video Consultation</a></li>
+            <li><a href="#">SignIn/LogIn</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="doctor-info">
+            <img src="https://img.freepik.com/premium-photo/female-doctor-indian-nurse-gener-generated-by-ai_942243-4472.jpg" alt="Dr. Rakesh Jain" class="doctor-img">
+            <h1>Dr. Rakesh Jain</h1>
+            <p class="qualifications">MBBS, MS</p>
+            <p class="specialization">Psychiatrist</p>
+            <p class="experience">15 Years Experience Overall</p>
+            <div class="verification">
+                <span class="verified">✅ Medical Registration Verified</span>
+                <span class="rating">👍🏻 4.8/5 (709 patients)</span>
+            </div>
+            <p class="description">Dr. Rakesh Jain is a highly qualified psychiatrist at Apollo Hospital, Bengaluru. With 15 years of experience, he provides compassionate and comprehensive care to patients with mental health conditions.</p>
+            
+            <div class="ratings">
+                <div class="rating-item professionalism">
+                    <p>Professionalism</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>9/10</p>
+                </div>
+                <div class="rating-item diagnosis">
+                    <p>Diagnosis</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>8/10</p>
+                </div>
+                <div class="rating-item availability">
+                    <p>Availability</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>8/10</p>
+                </div>
+                <div class="rating-item facility">
+                    <p>Facility</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>9/10</p>
+                </div>
+            </div>
+
+            <!-- New Info and Reviews Sections -->
+            <div class="info-reviews">
+                <div class="info">
+                    <h2>Info</h2>
+                    <p><strong>Specialization:</strong> Psychiatry</p>
+                    <p><strong>Hospital:</strong> Apollo Hospital, Bengaluru</p>
+                    <p><strong>Experience:</strong> 15 Years</p>
+                </div>
+                
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <div class="review">
+                        <p class="reviewer-name">Meera Shankar (Verified)</p>
+                        <p class="review-title">Visited for Anxiety Treatment</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Treatment satisfaction</span></p>
+                        <p class="review-text"><em>Dr. Rakesh Jain helped me overcome my anxiety issues with his patient and empathetic approach. His diagnosis and treatment plan were highly effective.</em></p>
+                    </div>
+                    <div class="review">
+                        <p class="reviewer-name">Rohit Kumar (Verified)</p>
+                        <p class="review-title">Visited for Depression Treatment</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Diagnosis</span></p>
+                        <p class="review-text"><em>Dr. Jain provided me with the right support and treatment during my battle with depression. His expertise and care made a significant difference in my recovery.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div class="appointment-section">
+            <h2>Apollo Hospital 🏥</h2>
+            <p class="location">Bannerghatta Road, Bengaluru, Karnataka – 560076</p>
+            <p class="rating2">⭐⭐⭐⭐⭐ 4.8</p>
+            <p class="fees">Consultation Fee - ₹1200</p>
+
+            <!-- New Date Selection Section -->
+            <div class="date-selection">
+                <select id="dateSelector" onchange="updateSlots()">
+                </select>
+            </div>
+
+            <div class="slots" id="slotsContainer">
+                <button class="slot">09:00 AM</button>
+                <button class="slot">10:00 AM</button>
+                <button class="slot">11:00 AM</button>
+                <button class="slot">12:00 PM</button>
+                <button class="slot">01:00 PM</button>
+                <button class="slot">02:00 PM</button>
+                <button class="slot">03:00 PM</button>
+                <button class="slot">04:00 PM</button>
+            </div>
+            
+            <div class="button-container">
+                <button class="book-btn" id="bookButton">
+                    <span class="button-text">Book</span>
+                    <span class="order-text" style="display:none;">Confirmed ✔</span>
+                    <div class="truck-container">
+                        <div class="truck" id="truck"></div>
+                        <div class="road-markings" id="roadMarkings"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="static//script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile - Dr. Rajesh Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Doctor Profile Info -->
+        <div class="doctor-info">
+            <h1>Dr. Rajesh Sharma</h1>
+            <p class="qualifications">MBBS, MD - General Medicine, DM - Cardiology</p>
+            <p class="specialization">Cardiologist</p>
+            <p class="experience">15 Years Experience Overall</p>
+            <div class="verification">
+                <span class="verified">✔️ Medical Registration Verified</span>
+                <span class="rating">👍 97% (38 patients)</span>
+            </div>
+            <p class="description">Dr. Rajesh Sharma is one of the leading Doctors for Cardiology at Sri Ramakrishna Hospital, Bengaluru. He has extensive experience in treating cardiovascular diseases.</p>
+        </div>
+
+        <!-- Hospital and Appointment -->
+        <div class="appointment-section">
+            <div class="hospital-info">
+                <h2>Sri Ramakrishna Hospital</h2>
+                <p class="location">Bangalore, India</p>
+                <p class="rating">⭐⭐⭐⭐⭐ 4.8</p>
+                <p class="fees">₹1000 fee</p>
+            </div>
+
+            <div class="slots-section">
+                <h3>Pick a time slot</h3>
+                <p>Today - <span>5 Slots Available</span></p>
+                <p>Tomorrow - <span>7 Slots Available</span></p>
+                <p>Fri, 18 Oct - <span>8 Slots Available</span></p>
+
+                <div class="slots">
+                    <button class="slot">10:00 AM</button>
+                    <button class="slot">10:30 AM</button>
+                    <button class="slot">11:00 AM</button>
+                    <button class="slot">11:30 AM</button>
+                    <button class="slot">12:00 PM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+document.querySelectorAll('.slot').forEach(button => {
+    button.addEventListener('click', () => {
+        alert(`You have selected ${button.innerText} for Dr. Rajesh Sharma`);
+    });
+});
+</script>

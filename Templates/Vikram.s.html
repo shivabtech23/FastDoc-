@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiologist Profile</title>
+    <link rel="stylesheet" href="anjali.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">ResQ</label> 
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Video Consultation</a></li>
+            <li><a href="#">SignIn/LogIn</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="doctor-info">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMVFRUXFRYVFRgVFRUVFRUXFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHyUtLS0tLSstLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAMEBgcCAQj/xABIEAABAwIDBAcGAwYDBAsAAAABAAIDBBEFEiEGMUFREyJhcYGRoQcyUrHB0RQjYkJygpLh8BWisjNjs8IkJTRDU1Rzg5PS8f/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACURAAICAwEAAgEEAwAAAAAAAAABAhEDEiExE0EiBDJRYUKB8P/aAAwDAQACEQMRAD8AzMNXbWJpswTrZQiE7DF0GLwSBdCQIGFkXuRdB4XoeFgHIYnGsSDgnWuCIomMUqGNNMeFKglCwrYRpKe6IspFHoqhqLR1LViTYPkp1DljReeoag+KYi2MG1y8jq6CzSdznE7tLny14IN0NCLm6QNxPEGw2zAkncBbz1Ql2P3Orcg/mPlpZDq+oAdcnpHnUuc5xtfdYH638EOe8k3JRXS2kUGhjhv7oI77FEoa5hAJNhe2oO/vGiqrXdninYmOJ0BKNGpFxa2+5IsQiiqJGAEat4i4tz3cD/fNWCGVr25m+I5HkgI+ETKvQn32Ud6Bkx1jwnmyNQ18ZTRa7mgOkGOkCQeEIa13NOtY5AdRHq0AqAIlLLCuoYdUtlEiP0CSKfh0kNg0Z/nK9EpTjoV6KcroOc4E5XQqCuvwxS/DFAwhVFdCrXBpyvOhKJh8Vi7bWKL0BS6ArUAmitTja/tQ0xFP0NKXvAWoDaSthWHFCFMZjDu1WHBdk8wBIRwbHttuRtHM5t+IorMTc6/YCd9uwfO/cCgON17nyFtzZptewDnW/adbXXlwVr23wl0DGhg0cXZiL3s0A27vsqTTwF7wOJOqm6uzqxfsVL0j2XtkddQhum9etwq/BL8qL/CwJGfNSZZ3utYWsLaKx0OCMG8XV9wTA4TH1o2+SR519Dr9O66Y0cwGt0WwuvLeO/Q9/A/NXLbnBY46fqNAsQQqCTkAHE2IPrZUxz3VkckNXQcNUnI5boQ1yIUqeiHhOaV0GXSa1PwsSseLOYqe6nMpFa/Z3hEcszjIA7I0EA7rk7z3W9VodfgFPK2zo2g8HNADh3H7qbTZVOjFDQ9i8go9VdMb2efT6nrM4OA9HDgUCbHqpNstEZ/w88vRJWj/ABCPkkl/2MYi6n6x71OjoexdwRXPirBBSrqlKjkSAP4DsS/A9isZpU0+nSqQWiuSUgTP4UI1UxKOI06ZNkOOiC7dQhEYmLuRiYVsAy0gRLZOjBm3LiZqJ7Ht/PTInkfDWcHpBlGiKvphZM4S3qhEntUWWhFUZV7WIgIo+GZ5YO0kAgebVm2DQxsY+aZ2WxytYLF5P7v1Wje03Eull/BNju4PiLX5iC2R26wA4Nd6rP8AaHBfw00kTetYjKSBe2UX3ab0lp8s6YRcUnRwzGIb6h3krJhlfTvA1Cok8BFtd+/fpr/+L2gpXySNYwkOcbCy08UWvRoZZJ1RpMdXAw3c4AX4qw0u0FHYATNusexfD5IZHRyFxLSBrpqWh31XFHSudmNiMgu4gaNF7Am24X42KRYI+2NLO7qjUdu4TJTF7DmA101u3iVljWZnjwt4fRWXCpKpjQ2D81sgPVda1rEEG5AtcjVKkwOzJJrgAOe1rHG77NcWuPbYgjwT46hyyeW5doCubqilA1Q3s1R7BsLlksWRvcObWOI8wF0s4WzoRp2FisNPsnVOGkDv4rN/1EInS7AVJ97o2d7iT6AqbY8bBGAYo+mkEjO5wO5w4g/dargmOxVLeobO4sPvDu5jtCrFL7Pfjn/lZ9SfojNFsdBGQc0hI3HPlt3ZQLJCwXxRzeifntaxvfcslnIzG265t3LVqzCo5GZH5iO17z9dVnO0uFdA4WN2nd2JJoeDoGdKkoudJLqPuVjD2/NWSnCrlAfmj0UirMhEluCYkau86be5IkM2Datqi2UupKjqqJM7jC9lXrFzKUwjIMyJbJf7dDZUR2V/2yZE5+G0YT7oRNyFYQeqESedFFnTDwx/bxpixWN9jlJhkJ4adQerPVAsdm6SVzyL3N+0ciL96uXtYgPRxytYTkd1nDc1twbO7Lj+7qhvlzaqElUrO3HJSiQZ6Vh1JP8AK4fRFdjcOvKZcvVBDGd97k9+5Da6raRlvbmn8K2pyvDXFrWgjLYWFt1itJTcaQU4KVsvW22BxSPa+TRrmNaXD9hzdzj2EGxPDKOFyAGGYDDE65na4HQWcDfsAB6x7kWm2ljrWOjBY3KAY3l9nF7d/UtoLX4qTs9iIIsQ3MNCQACfEKblJKmOop9QUwfDGMBkLcpIAY072sF7XHBxJJ8QN4QCsy/hprCx6eUd4c8uGviVYaqqDWlxOgF/JBKyjyUYJNy/8w97+sfU+i2FbTRP9RLTG/8AvSp4DFGaqES2yGVodfcddAey9l9E0Vg0AAAdi+aJd6veBbbVbGBmZr7CwL23d4kEX8V6EkeZCVGzrwlZLV7YVbh/tcv7rWj5glAK7G6h/vTyH+N1vIJKK7m5y1kbfee1ve4D5odUbUUjPenZ4HMfRYS6ck6knv1XJnR1BubJU7f0g9wveexth5lUvaPHjUEG2Vo3DefFVGGbVSZpdErQVId6ZeId0yS2o1kSkdr4oxHIgVM/VEOlRaFTCbZV6XqAyZdmZLQzYpimUnvXGZOIx9q4lK8D1xI5EUjyIlsyLTXQx5R3A4usCmROfhquEP6oRJ8miBYU/QIi+TRSZWD4A9qYelhli+Njm+YsPVYTFWFt2u0tcHvC36emL7kmzRvP0HMrGvaJgwin6WL3JW9KW/Dmc5t+0HLfvJQ43TK49kmypuJc4p6OhceXmFFBXTRcqr/oya+wnNhs0TQ/S36XAnyRjZHFi2Q5jpYnyQKJhDTqm4H5Se3RI47RaYylrK0aJHiZq546dvuySNa79y93/wCUFW/bdgEZAAA5DQKJ7K9jzEHVFQLTEZWRn/umuAcS79ZBHcNOJUvboFrSClhFRdIn+om5K2ZZNvRfDRohM+9F8NOisznROm3IbUOU+odohlQUqHI7npp716dSlLTnemMOU79VJmdoh8B1UmeXqoNBQxnSUXpgkgOKk1Kn2XGCQdI4NaLkq6M2MfYF7rdwU55Ix9HjilLwq0a6LgieOYE6Czgczdx5hBiFoyUlaBKLi6Y6XBc3CjvXN04hKzBeEhRgV2y5Nhck7gN57giAUyL4DUi4UzCdiaiYZpPyY993jrHuZ97K7YHsxS0rM5Gd3xSanwbuCV5Eg/E5DuE3LRYFE3gC2beeC5jqdC7cP2QoLnkuuVGU2y0MSXoseq7RPI0YxpPebFZ9t9Su/D0s7dQyFscg5tLQb+Bv5q67Wxn8FI0aFzT8ihMFpqKMHUGNo/yhCK+yjfaRi9RTcW7uSiahWXG8GkpyXtBMN9f92TwP6TwPgoNIzpHBrG5neFh2k8Aui2uEqi+kOBjjwNlqfs22D6zauqbus6GMjjwkePUN8SpmxOxYblmqAHEasZ+y0/Fbie9XLaPExTU0svwsNu11rNHnZa34Lz0j7C4l081e692iqys7mRsjPqwnxRTarBBVQlubK4atda9uYI4hVr2M0pbRl53yyF58gD63V1xCpbG0ue4NbcAkkAC5A3nvSPj4MknHphe0ezk9KQZG3YT1ZG6sPYfhPYU1QO0Wz0bWT07mSND2m7SDqCLqtVfs9ZYmnkLTwa/rN7s28eqZTv0lLFXhRJ3qDMUQxaikheY5Wlrhw5jgQeIQqUphDiN1nBGpLWuq+TqnTMbWuiEbldZyjVc+iU8iHTyIhSHM6Si516tQxr3spw1mrjqRoFptc1oYVmuwokhYcwsSVK2o2nexoAG/RedLsmjtXIps520qWiItvq4i3gd6ohXdVWukdmebn5dyZLl044aKjnyT3dnDyuCUnlNOcqokSIIy9zWtF3OIaBzJNgFruzWAw0rRYB0pHWeRrfiG8gqJ7OaDpKnpSOrCM38Trhv/ADHwWgmbrdxPrr9VHLLtFsUeWSKyouMvPUqHiDySOQ3BdSG5uFCrJDqeW5BRM5BZkHVAPJeNgVYnrakRRkSkOdvJDdBrzHKyFYXtEyeqbTuqXPNi7QhrHObbqXHvE6mw+EpvjdAWRFq2idnY4cA0geW9VbZ7EmRYc2WU2bGyx5kjQAcydFaK9t2nuKxLE6uR8UcG6MOcf3nXLQT2AD1TwhaoVzp2SsR2gqXvMtzGDcNj0LMpFus0ghxtzQptKXNs6zW77WAHfbxCdqWFzms+EAcN4AuicNC6XqsFgBqd1t43+vj2J02+FHGMVbLd7ItrCXfgJnE6E07nb7N1MR8LkdgI4BS/a5iWZrKZp3uaX/xOyt+ZPgqZSYWYmuq2HL0D2dEfje1wLvC1wewFH9qmOlqKUOaWvqHh72nVzGubkaw24tzDxuncaZz7WapsTSdFRwM3fltJ73DMfUlQvaIwuoKq28REjvb1h8kawzSNo5C3l/SyjbQxZ6aZp/aY4eYK576V/wAQL7Nq/pqMPO8mx7xofVWGGa0uTha6zf2IVR6KWN36XgfvC/2V36azzIeLsoWkqZovhNxDD4Z7iaNrwNBcajuO8Kl7RezvQvpHG/8A4bzv/cfz7D5q9xOBGicZJp42Hasm0FxTPnmspnxvLJGljgbFrhYhR3OW17dYHFPTSPLR0sbC5j7dbqAuyE8WnXTtusRcVWLsjKNDUrbqM6nupd1KhhuqRVk5T1BH4VJHvwwXqbUT5jUKapiydUjcqRtZUh0gA4JvZ4OZFck3KF4jNmkJXDjhUjvyStHAK9DkzmXQcrkT15TLnL17l3htI6aZkTd73BvhxPgLnwWBVmm7DUvQ0QcdHSuL/D3Wegv4qZJN1h26eI3eik1ZDWhjfda0NHcBYBCHT3c0HeHD52XPFbdLyevAk6a1u9M17+qT2H7LuQXHdqhtbUBrC5xDW3FyTYADW5PgqpEWyq+0LFXF0dHEbEMBkI5EWDfH7KwbFbHRwRNkkYDK6zusLlltWgX3Hj3qv7ISMmxGapeA5ufKwnUC1mtcPAArWMqaTrhkgbUs39yyHEoAyx5Nv8/qtq6O5WK7WyW0/U5vk4/ZNjfGCSuSA1Bdzy48db+O+53AHjdXKns2kY1g60hsOd3HXyVLoDv8eWvPkbW4K1YJUZmxvdujY4/xEmx+abH6Uz/sRZcPw1s08FK0XjhHSyciR7oPaT6XTeJN6THqdm8NYT6Od82qy+zmgIhfO8deZ2btDRowfM+KA4f1toL8o3f6JEspW2TjGki811CDz01FiQbHfu7gq5jPSRmzZZA0tuQXFw7dHXVynKp+2Zyxkjgx1lOI80Vn2WSBnSOGl4227TZv3WgSx9eFnIFxVB9llMHRRuPL5OI+ivjpvznO+BiM/QRfB2CYh8tuwDvOiJQDyGg+pQKnmu5tt7uuf9Lf+byCMxv4BIx4scqmBzXNO4gg+IsV84yNtpyX0gsF2tgDKyoa0ZQJCQOx3WFuzVUxiZAJfVS4p7KDKU10yvF0c842GvxaSCdOvE+xP4i6SflxtuVX3yZnm3NGMXpnECx3JqlwrKQ4rjjw7pM4jwt5bcKBLdpsdFpNHCzIO5U3a6nDXXC0ZNsDSQELrq8ey6ibmlncLlgDG9me5ce+wHqs7bOBvWxbF4e6nowZBZ0p6QjiAQA0HtsPVDK6VD412ybVxHeCCOw/RBK5hD2O5ObfuuikwIPyI4hQcW3A9oPqhBcFyPpPqH2aUIx2mbJGIni7XABwuRe5HEIrPqB3oZjLt9uAFvMJ0IwJs1QCNmgAEkji0A3swuOUX7gFpOHT52do0PhuPkqRhrLNpxyjB/y/1ViwuoyvA4O08eH99qEvQxD8I1WBbau/6S9nwyS/8Q2W/Q71gftDbbEalvJ4P8zGv/5kYBrqBGHyWPHw36cd+8a2Vk2chMgEQ/aeG+Z+WqqsG/8Avh/dlonsmo+knLuEVz/E64b6ZvJUTq2HItopf2bBQU4jjawbmtAHcBZZvhumP98b/RrvutNcbBUF9G4YzDI0XAhmzng24aGg9puVKJpfRb8Ql3NHHeqlt3L+S8fo+asmIu1BVL2ymzRvPAjL6FGKEmzz2Qt/6MD2vH+cn6qy1r7Gc9gCrfsmeBSM/ef80ZxmcAvF/ecPki/3Avg5hsvXd+lrQPFoPzKMU0nif78gq7RGzna73f6WhtvQo/SG3D7pZBgTxrvP2Hcss9rcDWzxSDQvjcHD/wBMjKe+zvQLUM6pXtTwwSUvTAdeJzdeJY9wa4HxLT4LRdMeStGOyzKO6VSJad3JNfg3K1iajedJO/gyktZqLnLVuI1XkuJWAQukLpDYKTU4FMRopWlwOjfQnT7QWFkPxfERINUKNBMz3guTEeKZai6uxYVQ9NUxRD9uRrT3Xu70BW91zmZcrjl007Fm3s9wkR5qyTfqyEdu57/p5q2sma4nNrff91Cb2kXj+MR8NA0zhw7L3CFY6wiFxH7IuLdinGDKbjUJjEx+W7uVIqiMnY5FJdoPMA+iB4rXNBc077tF9LDTMfGxCJUcoMLHD4R8kOxCjZJrbX525rIz8OopLGP9IynysiWfdzvogFWyUkOaWNItvu+9uFrAHxuoNJgE5q2VEkxNjmygWA0tlABsB4JmgLhrdDJma13n38Vg/tIP/WlV+/H/AMCJbVgM2pYeWYeG/wCnksM27lzYjVn/AHpH8rWt+iECoJjfYdq2n2N4d0dH0p3zPc/X4W9Rnh1Sf4likMbnFrG6uc5rGj9TjZo8SQvpCiiFNAyJg0YxrB2BoAv36Iy/gLZNxSuydVvvH/KOZ7exAcIjMlY8t16m+/vPNjlHbla93ghuP4gWse4GxsbHfYnTN4XugkO27aGWoeaYS2ytgaX5ejDXyRk58pIBAzF2ri52+x0CRJu2XvGI3+6BYnTW+neqjtpg8hpQ1soYWuu42cc2m4W71csHxptdRMqcmQkgZScxHVzZc1hm5g21aQeKBbU1DGxgE6kiwGpNuQGpWXGZoqGxFPOaRhju0a74c4vnF+tmHC+luR7FY6xg6Mu6NlwL9aCYHdzb2/VFcGeDBG9pGVwJFiOdzcDcesDbtTmLYgIoXvPBp05ncB5ptgaor2zlU4QxnTMW30GgvqbX1GpVrpajdmN77yqlQwlrGtvcjeTz3n1Vkoy4NBcc3cPqlZohppHBVzb+a1HIA24JYHHg0Z2+eoA8UTbUvH7Oi8xONtRTywjQvY5ovwdbqnwNj4JSlmOOjbZR5soQ81D0xJI9OkZsnZwkhuqSahDU8O2JdG5hZICMoLs1rh3Gw5Ky/wCCu6MnO0kcLb082MmUZsuXLqSbG6j12N00JsLu55b2/quDaTOzVIEVGCPeLW39/wBlUNocCmprOkZZjjo4ai/I8itDotqoXuDY2EE/FoirrvilbO1j2Hc3eOz1TqTXorivoC4DRMFNDFJo8Mv2Xd1iPMp6pocu4eIXFTOyzfiF+Og+5TLJ2/GT4aeapCL9JzkvB6ONw/quKxnVPcdF3HUN3anwK8qJG2uOO5WOdgnZ2S8Dbi1i5tjvFnEblMlgHBRMPnBLxyefkFMc5AP0MMhF07GNUgV7TcVjE6hlyyMPaPI6H0KxDaGQurKkn/zE3pK4BbVHv8Vh2JvvUTu5zSnzkcVoDhr2e0fS4jTNIuGvMh/9prnj/M1q27E5nWssm9kDL17nfDTyHxL4h8iVquJPuFn6GRVMSjzteDqC1wI5ggqtDBCZA+bpXtNhmhLBI7se19hfd1gTfkFcWRZnW53Uv8MGkBFMmEaDSNjWt6NjG5Y2Zi862zPkefeebDu1sTdVbH8PkmkBBsBpv1F99lawbNQ2oesjMG7KYd0BcA73jezbgDzOp0HkpW0tc0vjhcd5zuBF7hlstx+8Wn+FSKTQqkV075a10oDnN1jFgSAGnnw1BPij6wfRamU2bc/6IpRGRjcpFxwQCnnDRqjeHPD26O3bxyQYUG4X2Gtl492tmjvP2TMbSBzXDZchyn3T7vYeSQezMtpMKbEX6ftOt5qs3arj7Q5rF47j5gLOel7U8UCwtZqSFdN2r1OKaGza3M1wmLnE7rWFu8Ku7S43cs6MkaG6iVFUDd1hcnVMxTMvme0W7fooRil06JNsNbG4m981nWItyV4rsVcMsTTYHUn++G9UjC5qbPeI5XEWKIRYhlMmexc3KG8je5HhpfwHNBq5WC3RaGvZcAMudLA6uN9xPJFYcrLNdbN8LefLmq7hVblDrayWGZx+N/AHk0DX+iLYdVMGZ7vdYLXO97j9OxaxaDAp2neNfAkeITNbQktIDb92p8lEpsZzGzYzbhZT/wDFbHKAL8hrbvKOzRtEyjUshjmkY4EHNmAIINiAL69yLMmurd74/NDSOTgCPIpsYZTv06Jve27fkj8iF+NlXdKpFHuKJVmyfGGT+F//ANh9kP8AwskQIkYW9u8HuI0RtMWmvTl1cxrXOOmUFx7mi5+SwxjydTvOp7zqVqe18oZSTHi5oZ/O4NPoSqTgVHYdI6MvduYLad6OyirKY4uTosvsjjLZp5HCzeiDQToDd4JAPH3Ve6mvY7MA4EjgFnMlPVOG8MHwg2+SJbPQviuJQbnjvUHl7Z0PAqLRQygPBPP6KdM+70CLuSjSVzmG4P2V00+o5JRceMtFTPYINJV6oVU42Tw9VBOKDkb94P2TJCOyy1leI4nO4hpt3qnYHO8uLRqD1teHMr2txB8oyAXHIAkn1VgwXB3sF2xFxO+4+h0W8MkPRU197vT63+iJUdE4G8ZcD3tN/CwUiGUAhs9OG8iG2+Snfg497S5vcb+OqWw6jbcUYwhkpyOPxCwPaE7UyXHMHiPmCuMQgY+PLIA9p3niO3sPagOGsfA8xOdmiOrHX1b+8OHyWSszdFK9olWTOW/obfv1/oqaVZNvWWq5NbjqkW1sMjdPO6rJCojHd0k3YpImH+l715U1Bfa/AWCIsaOS6MLeSnsi2rBsNU5vu6IhSVUjpA92u4HuXQibyTsbwEGzKJa8Pqvy8g957ySeNrt+a6fUl8jYgeq0knlf9onuA9EEosQyhxHvBuVviRr4Ilg1HoTI7LfV54hvAd5SGaLJDWPkPRU46u4u5/ZFIpoqcWJzyHkgtPWOcOipm5GcXcT23ROmoI4utI4E9p1SMZIIUVTJIcxGiMMlsqzNjgGjFEGIved+iFMNpFkxnaeClZnleByG9zuxo4qny7dVFQT0YEMX6gHyOHbfqj1VB2mxIz1TiTdrOo3w3+vyXcdabWCeUWlwMKbtlpxjE4y0ZwHWIdbcCRu03cUBqtpjuYA0dgUHIZb3dYDeU1LQRcHkpVFf5dKOTS/HiOXYu/NfMUcw3aPg4oPDDC3fqpLKanf+koyUX9Ai5L7LRS4q150tddV9SGdcRNltvaXlvyVUZhTwbxyXUmSrezR5N0qjT/Fhk9l+SNG2PqaCsYctOxsjdHseASO3XeO1WduFU43QRD+Bv2WC7PYsaauZI02a5wa7tDj91urqzQHmLqzRyXRJZDG33WNHc0BIvHYoX40Him3yX3FagbEuaUbiAR2qI+RnDRNOJ3FC6qUtOvJFIVyHcQrDEHOtmABcP1Aakd9kAxOcSsDoXaOHiBy7OITzMUBPQv3G4ae/gqfgc7myNZwJLT6/ZOkI3Yq2mF9QoD4gOAVkrIQg9VGFREwfYdiSdypImILHD4m/zN+67zt+Jv8AM37oGldR1OvcNFw+Jv8AO37rzT42f/Iz7oMkjqDcMCoyG4c245OafkVNg2nIsHsBF7mx32AH0VbSW0Rt2Xp+3VmZYmhngoUWOmQ3dISe0qpJLLGkbds0ejqmnipk9YGRvcODSVmcFY9vuuKJx464sLH8Ra4Q0NsCmy6kneTfzU2Ko0RLCqRhbmIDiEIxOszvuAABoLBFxsEZ0TZ6r8vKNOaHZzwunWRZhfNZeMqMugCRKird+jZLuRXrXuHAp9tdzASdWX4Ig5/Ioq97TpdSa6tc8AuGqhh5O4LqomzWB4DgtXTbUiHLJrdbng1Z0lNE7mwfJYe+McFq+y9TakjHYmaISYQqpy03ug9ZtC8Dq717itXv3lCoKiED82Rrdd1wT5BFInY/HtHUuNmi/gpgllc4SSvDbDd89ENqNqKeMWhH8ViqvXY0Xm7XHtRoNNltxOqi3h2vkqzU1jQ7q873B4oNNVOdvJPeo5eeawyiWxm0bcoDgSRxHLtUSoxyM7gfRVy6S1m0Qa/xVnJJBbpLWbVCSSSQGEkkkigiSSSRAerxJJYx6vQvEljB3Cdz/wB0/JAkkkDDzNy4XqSUc8CkRpJIMMSTGojvfPckktH00/Dtq0fZ7/srEkk7IyBe03ulUJu8pJImidy7lyN3n9EkkB0cleLxJYwkkkkDHqSSSwD/2Q==">
+            <h1>Dr. Vikram Singh</h1>
+            <p class="qualifications">MBBS, MD - Cardiology</p>
+            <p class="specialization">Cardiologist</p>
+            <p class="experience">14 Years Experience Overall</p>
+            <div class="verification">
+                <span class="verified">✅ Medical Registration Verified</span>
+                <span class="rating">👍🏻 4.8 (43 patients)</span>
+            </div>
+            <p class="description">Dr. Vikram Singh is a well-known Cardiologist at Sri Ramakrishna Hospital, Bengaluru.</p>
+            <div class="ratings">
+                <div class="rating-item professionalism">
+                    <p>Professionalism</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>9/10</p>
+                </div>
+                <div class="rating-item diagnosis">
+                    <p>Diagnosis</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>8/10</p>
+                </div>
+                <div class="rating-item availability">
+                    <p>Availability</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                        <div class="oval"></div>
+                    </div>
+                    <p>6/10</p>
+                </div>
+                <div class="rating-item facility">
+                    <p>Facility</p>
+                    <div class="oval-container">
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                        <div class="oval filled"></div>
+                    </div>
+                    <p>10/10</p>
+                </div>
+            </div>
+
+            <!-- Info and Reviews Section -->
+            <div class="info-reviews">
+                <div class="info">
+                    <h2>Info</h2>
+                    <p><strong>Specialization:</strong> Cardiologist</p>
+                    <p><strong>Hospital:</strong> Sri Ramakrishna Hospital, Bengaluru</p>
+                    <p><strong>Experience:</strong> 14 Years</p>
+                </div>
+                
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <div class="review">
+                        <p class="reviewer-name">Seema Nayak (Verified)</p>
+                        <p class="review-title">Visited for Neurological Check-Up</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Treatment satisfaction</span></p>
+                        <p class="review-text"><em>Dr.Vikram Singh excellent care for my migraines. His approach was calm, and his diagnosis was spot on.</em></p>
+                    </div>
+                    <div class="review">
+                        <p class="reviewer-name">Rahul Hegde (Verified)</p>
+                        <p class="review-title">Visited for Routine Check-Up</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Service Quality</span></p>
+                        <p class="review-text"><em>Dr. Vikram Singh took his time explaining my health condition. He’s very knowledgeable and thorough.</em></p>
+                    </div>
+                    <div class="review">
+                        <p class="reviewer-name">Aisha Khan (Verified)</p>
+                        <p class="review-title">Follow-Up Appointment</p>
+                        <p class="recommend">👍 I recommend the doctor</p>
+                        <p class="happy-with">Happy with: <span>Doctor's Attentiveness</span></p>
+                        <p class="review-text"><em>Dr. Vikram Singh helped me manage my epilepsy effectively. He was attentive and made sure I was comfortable throughout.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div class="appointment-section">
+            <h2>Sri Ramakrishna Hospital 🏥</h2>
+            <p class="location">Opp.IIM 154/11, Bannerghatta Road, Bangalore, Karnataka – 560076</p>
+            <p class="rating2">⭐⭐⭐⭐⭐ 4.8</p>
+            <p class="fees">Consultation Fee - ₹800</p>
+
+            <!-- Date Selection Section -->
+            <div class="date-selection">
+                <select id="dateSelector" onchange="updateSlots()">
+                    <option value="today">Today (No Slots Available)</option>
+                    <option value="tomorrow">Tomorrow (9 Slots Available)</option>
+                    <option value="saturday">Sat, 19 Oct (10 Slots Available)</option>
+                </select>
+            </div>
+
+            <div class="slots" id="slotsContainer">
+                <button class="slot">10:00 AM</button>
+                <button class="slot">10:30 AM</button>
+                <button class="slot">11:00 AM</button>
+                <button class="slot">11:30 AM</button>
+                <button class="slot">12:00 PM</button>
+                <button class="slot">4:30 PM</button>
+                <button class="slot">5:30 PM</button>
+                <button class="slot">7:30 PM</button>
+                <button class="slot">8:30 PM</button>
+                <button class="slot">9:00 PM</button>
+            </div>
+            
+            <div class="button-container">
+                <button class="book-btn" id="bookButton">
+                    <span class="button-text">Book</span>
+                    <span class="order-text" style="display:none;">Confirmed ✔</span>
+                    <div class="truck-container">
+                        <div class="truck" id="truck"></div>
+                        <div class="road-markings" id="roadMarkings"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
