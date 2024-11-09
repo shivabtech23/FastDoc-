@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FASTDOC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #c3e9fb, #f4f8fd); 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Bubble effect background */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+            animation: bubble 20s infinite ease-in-out;
+        }
+
+        body::before {
+            width: 400px;
+            height: 400px;
+            top: 10%;
+            left: 15%;
+        }
+
+        body::after {
+            width: 500px;
+            height: 500px;
+            bottom: 10%;
+            right: 15%;
+        }
+
+        @keyframes bubble {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px; 
+            margin: auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        
+        header h1 {
+            font-family: 'Lucida Sans', 'Helvetica', sans-serif;
+            font-size: 38px;
+            font-weight: bold;
+            color: #e74c3c;
+            letter-spacing: 4px;
+            text-shadow: none; 
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            padding: 10px;
+            transition: all 0.4s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.25);
+            letter-spacing: 8px;
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+
+        
+        .form-container input,
+        .form-container button,
+        .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
+        }
+
+        .form-container input::placeholder {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .form-container input:focus,
+        .form-container select:focus {
+            border-color: #ff416c;
+            box-shadow: 0 0 8px rgba(231, 76, 60, 0.6);
+            outline: none;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .form-container i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ff416c;
+        }
+
+        .register-btn {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.4s ease;
+            box-shadow: 0 8px 15px rgba(255, 65, 108, 0.4);
+        }
+
+        .register-btn:hover {
+            background: linear-gradient(45deg, #ff7b5b, #ff5733); 
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(255, 87, 51, 0.6);
+        }
+
+        
+        .flash-messages {
+            list-style: none;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+        }
+
+        .flash-messages li {
+            margin: 5px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <a href="{{ url_for('home') }}" style="text-decoration:none; color: red; font-family: 'Poppins', sans-serif;">
+                    FASTDOC
+                </a>
+            </h1>
+        </header>
+        
+        <div class="form-container">
+            <h2>Register</h2>
+
+            
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <form action="{{ url_for('register') }}" method="POST">
+                <div style="position:relative;">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                </div>
+                <div style="position:relative;">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div style="position:relative;">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="number" name="age" placeholder="Age" required>
+                </div>
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <div style="position:relative;">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div style="position:relative;">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="passcode" placeholder="Password" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+
+            <p style="text-align:center;">Already have an account? <a href="{{ url_for('login') }}" style="color: #ff416c;">Login</a></p>
+        </div>
+    </div>
+
+    <!-- Icons from FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASTDOC Inspired Homepage</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: #003366;
+            font-size: 1.1rem;
+        }
+
+        /* Header Section */
+        header {
+            background-color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: #003366;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 12px 18px;
+        }
+
+        nav ul li a:hover {
+            color: #0077b3;
+        }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #003366;
+        }
+
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .new-tag {
+            background-color: #4c1d95;
+            color: white;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            margin-right: 0.5rem;
+        }
+
+        /* Login Button */
+        .login-btn {
+            background-color: #003366;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #005a99;
+        }
+
+        /* Services Section */
+        .services-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            padding: 2.5rem;
+            background-color: white;
+        }
+
+        .service-card {
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: #555555;
+            font-size: 1.1rem; /
+        }
+
+        .service-card a {
+            font-size: 0.9rem;
+            color: #00b0ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Consult Section */
+        .consult-section {
+            padding: 3rem 2rem;
+            text-align: center;
+            background-color: white;
+        }
+
+        .consult-section h2 {
+            font-size: 2.2rem;
+            color: #003366;
+        }
+
+        .consult-section p {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 2rem;
+        }
+
+        .view-all {
+            display: inline-block;
+            font-size: 1rem;
+            color: #00b0ff;
+            text-decoration: none;
+            border: 1px solid #00b0ff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .view-all:hover {
+            background-color: #00b0ff;
+            color: white;
+        }
+
+        .search-bar-section input,
+.search-bar-section select {
+    padding: 0.7rem; 
+    font-size: 1.1rem;
+}
+
+.search-bar-section button {
+    padding: 0.6rem 1.2rem; 
+    font-size: 1.1rem;
+}
+
+.search-bar-section span {
+    font-size: 1rem; 
+}
+
+
+  
+        footer {
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+            color: #003366;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-column h4 {
+            color: #003366;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style-type: none;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 1rem;
+        }
+
+        .footer-column ul li a:hover {
+            color: #00b0ff;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 1rem; 
+            margin-top: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="home.html" style="text-decoration: none; color: #003366;">FASTDOC</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Find Doctors</a></li>
+                <li><a href="#">Video Consult</a></li>
+                <li><a href="#">Surgeries</a></li>
+                <li>
+                    <span class="new-tag">NEW</span><a href="#">For Corporates</a>
+                    <div class="dropdown">
+                        <a href="#">Corporate Wellness</a>
+                        <a href="#">Health Programs</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">For Providers</a>
+                    <div class="dropdown">
+                        <a href="#">Join as Doctor</a>
+                        <a href="#">Healthcare Facility</a>
+                    </div>
+                </li>
+                <li><a href="#">Security & Help</a></li>
+            </ul>
+        </nav>
+        <a href="login" class="login-btn">Login / Signup</a>
+    </header>
+
+    
+
+    
+    <section class="services-section">
+        <div class="service-card">
+            <img src="https://www.practostatic.com/consumer-home/mweb/images/1597391270/instant_video_consult.png" alt="Instant Video Consultation">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_find_doctors.png" alt="Find Doctors Near You">
+            <h3>Find Doctors Near You</h3>
+            <p>Confirmed appointments</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_surgeries.png" alt="Surgeries">
+            <h3>Surgeries</h3>
+            <p>Safe and trusted surgery centers</p>
+        </div>
+    </section>
+    
+    <section class="services-section">
+        <div class="service-card">
+            <img src="https://img.freepik.com/premium-vector/human-heart-icon-illustration-vector_1076263-138.jpg">
+            <h3>Tachycardia and Palpitation</h3>
+            <a href="#">CONSULT NOW</a>
+        </div>
+        <div class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2491/2491347.png">
+            <h3>Epilepsy and Alzheimer’s disease</h3>
+            <a href="#">CONSULT NOW</a>
+        </div>
+        <div class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/10000/10000036.png" alt="Stress or Anxiety">
+            <h3>Stress or Anxiety</h3>
+            <a href="#">CONSULT NOW</a>
+        </div>
+        <div class="service-card">
+            <img src="https://www.verywellhealth.com/thmb/CqshLDn2vV-8m5FysDA1Ti6C7iU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-139541971-1f2cdfcfae93447bacabe425dec3d65a.jpg">
+            <h3>Torticolis and Arthritis Issues</h3>
+            <a href="#">CONSULT NOW</a>
+        </div>
+    </section>
+    
+
+        
+
+<section class="search-bar-section" style="text-align: center; padding: 1rem;">
+<input type="text" id="specialization-search" placeholder="Search for specializations..." style="padding: 0.5rem; width: 60%; border: 1px solid #ddd; border-radius: 5px;">
+<button onclick="searchSpecialization()" style="padding: 0.5rem 1rem; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer;">Search</button>
+
+<div style="margin-top: 1rem;">
+    <span style="cursor: pointer; color: #00b0ff; font-weight: bold;" onclick="setSpecialization('Cardiologist')">Cardiology</span> |
+    <span style="cursor: pointer; color: #00b0ff; font-weight: bold;" onclick="setSpecialization('Neurology')">Neurology</span> |
+    <span style="cursor: pointer; color: #00b0ff; font-weight: bold;" onclick="setSpecialization('Orthopedics')">Orthopedics</span> |
+    <span style="cursor: pointer; color: #00b0ff; font-weight: bold;" onclick="setSpecialization('Dermatology')">Dermatology</span> |
+    <span style="cursor: pointer; color: #00b0ff; font-weight: bold;" onclick="setSpecialization('Radiology')">Radiology</span> 
+</div>
+</section>
+
+<section class="search-results" style="text-align: center; padding: 1rem; display: none;">
+<h3>Search Results</h3>
+<ul id="doctor-results"></ul>
+</section>
+
+<script>
+function searchSpecialization() {
+const specialization = document.getElementById('specialization-search').value;
+if (specialization) {
+    fetch(`/api/doctors?specialization=${specialization}`)
+        .then(response => response.json())
+        .then(data => {
+            const resultsSection = document.querySelector('.search-results');
+            const resultsList = document.getElementById('doctor-results');
+            resultsList.innerHTML = ''; 
+
+            if (data.length > 0) {
+                data.forEach(doctor => {
+                    const listItem = document.createElement('li');
+
+                    
+                    const doctorProfilePage = `/dr_${doctor.doctor_name.toLowerCase().replace(/ /g, '_')}.html`;
+
+                    
+                    const doctorLink = document.createElement('a');
+                    doctorLink.href = doctorProfilePage;
+                    doctorLink.textContent = `${doctor.doctor_name} - ${doctor.hospital_name} - Rating: ${doctor.rating}`;
+                    doctorLink.style.color = "#00b0ff";
+                    doctorLink.style.textDecoration = "none";
+
+                    
+                    listItem.appendChild(doctorLink);
+                    resultsList.appendChild(listItem);
+                });
+                resultsSection.style.display = 'block';
+            } else {
+                resultsList.innerHTML = '<li>No doctors found for this specialization.</li>';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching doctors:', error);
+            alert('An error occurred while fetching data.');
+        });
+} else {
+    alert('Please enter or select a specialization');
+}
+}
+</script>
+
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Consultation</a></li>
+                    <li><a href="#">Health Checkup</a></li>
+                    <li><a href="#">Medication</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 FASTDOC. All Rights Reserved.
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
